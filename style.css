@@ -1,0 +1,21 @@
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#000;font-family:Arial,Helvetica,sans-serif;color:#fff}
+.site{width:539px;max-width:100%;margin:0 auto;background:#7b8e68;min-height:100vh;overflow:hidden}
+.topbar{height:76px;padding:14px 22px;display:flex;align-items:center;gap:18px;background:#70845f;border-bottom:1px solid rgba(255,255,255,.2);position:sticky;top:0;z-index:10}
+.brand-mark{width:45px;height:45px;object-fit:contain;filter:brightness(0) invert(1)}
+nav{display:flex;align-items:center;gap:18px;flex:1;justify-content:center}
+nav a{color:#fff;text-decoration:none;font-size:13px;font-weight:700;letter-spacing:.05em}
+.menu{border:0;background:transparent;color:#fff;font-size:20px;cursor:pointer}
+.hero{padding:38px 22px 28px;text-align:center}
+.cups{display:grid;grid-template-columns:repeat(4,1fr);align-items:end;gap:7px;height:260px}
+.cups img{width:100%;height:245px;object-fit:contain;filter:drop-shadow(0 12px 12px rgba(0,0,0,.25))}
+.hero-logo{width:230px;max-width:80%;height:auto;object-fit:contain;margin:8px auto 0;filter:brightness(0) invert(1)}
+.flavor-section{padding:0 22px 70px}
+.eyebrow{margin:0 0 22px;color:#552b1b;font-size:20px;font-weight:800}
+.flavor-card{display:flex;align-items:center;gap:18px;background:#6a321e;border:1px solid rgba(255,255,255,.12);border-radius:28px;padding:18px 18px 18px 8px;min-height:255px;overflow:hidden}
+.flavor-card img{width:170px;height:235px;object-fit:contain;flex:0 0 170px}
+.flavor-copy{padding-right:10px}
+.flavor-copy h1{margin:0 0 14px;font-size:24px;line-height:1.05}
+.flavor-copy p{margin:0;font-size:13px;line-height:1.55;color:#fff}
+@media(max-width:560px){.site{width:100%}.topbar{height:68px}.cups{height:230px}.cups img{height:220px}.hero{padding-top:28px}.flavor-card{gap:8px}.flavor-card img{width:145px;flex-basis:145px;height:220px}}
